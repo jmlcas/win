@@ -5,17 +5,17 @@ services:
     container_name: windows
     environment:
       - VERSION:"win11"
-      - LANGUAGE:"Spanish"
-      - REGION:"es-ES"
-      - KEYBOARD:"es-ES"
-      - DISK_SIZE:"64G"
-      - RAM_SIZE:"8G"
-      - CPU_CORES:"4"
-      - USERNAME:"admin"
-      - PASSWORD:"p4ssw0rd"
+      - LANGUAGE:"Spanish"   # opcional
+      - REGION:"es-ES"       # opcional
+      - KEYBOARD:"es-ES"     # opcional
+      - DISK_SIZE:"64G"      # opcional
+      - RAM_SIZE:"8G"        # opcional
+      - CPU_CORES:"4"        # opcional 
+      - USERNAME:"admin"     # opcional
+      - PASSWORD:"p4ssw0rd"  # opcional
     volumes:
-      - /var/win:/storage 
-      - /home/user/example:/shared 
+      - /var/win:/storage            # opcional
+      - /home/user/example:/shared   # opcional
     devices:
       - /dev/kvm
     cap_add:
